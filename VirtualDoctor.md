@@ -236,3 +236,13 @@ You have a doctor booking application built with React frontend and Laravel back
 - **SSL/WSS**: Secure WebSocket connections for production
 
 **Please implement this system following the exact same WebSocket-based WebRTC patterns used in the simple WebRTC application, but adapted for the appointment-based, multi-user React-Laravel architecture described above. The WebSocket implementation is the core technology that makes the real-time video consultation possible.**
+
+## Option 1: Laravel WebSockets Package is the simplest and best for your needs.
+
+🎯 Single Server Solution:
+bash
+# Just add to your existing Laravel project
+```bash
+composer require beyondcode/laravel-websockets
+php artisan websockets:serve
+```
