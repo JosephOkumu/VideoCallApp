@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Video Call</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <video id="localVideo" autoplay muted playsinline></video>
+            <video id="remoteVideo" autoplay playsinline></video>
+        </div>
+        
+        <div class="controls">
+            <button id="startCall" class="btn btn-start">Start Call</button>
+            <button id="joinCall" class="btn btn-join" style="display: none;">Join Call</button>
+            <button id="micToggle" class="btn btn-mic active">
+                <span class="mic-icon">🎤</span>
+                <span class="mic-text">Mic On</span>
+            </button>
+            <button id="endCall" class="btn btn-end">
+                <span class="end-icon">📞</span>
+                End Call
+            </button>
+        </div>
+        
+        <div class="connection-info">
+            <div id="status">Ready to start or join a call</div>
+            
+            <div id="waitingRoom" class="room-section" style="display: none;">
+                <h3>Waiting for someone to join...</h3>
+                <p>Your call is ready. Others can now join automatically.</p>
+            </div>
+            
+            <div id="joinAvailable" class="room-section" style="display: none;">
+                <h3>Call Available!</h3>
+                <p>Someone is waiting for you to join their call.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
