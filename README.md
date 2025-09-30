@@ -147,13 +147,5 @@ python3 signaling_server.py
 - TURN server integration for better NAT traversal
 
 
-
-## Option 1: Laravel WebSockets Package is the simplest and best for your needs.
-
-🎯 Single Server Solution:
-bash
-# Just add to your existing Laravel project
-```bash
-composer require beyondcode/laravel-websockets
-php artisan websockets:serve
-```
+## Author
+[Joe Okumu](https://github.com/JosephOkumu)
